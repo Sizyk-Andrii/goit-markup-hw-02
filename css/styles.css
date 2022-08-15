@@ -6,7 +6,10 @@
     --paragraf-text-color:  #757575;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
-    --secondary-size: 14px;
+    --primary-font-size: 16px;
+    --secondary-font-size: 14px;
+    --primary-font-weight: 700;
+    --secondary-font-weight: 500;
 }
 
 header {
@@ -16,6 +19,7 @@ header {
 body {
     font-family: var(--primary-font);
     color: var(--main-text-color);
+    font-size: var(--primary-font-size);
 }
 
 img {
@@ -32,7 +36,7 @@ section {
 
 button {
     font-family: var(--primary-font);
-    font-size: 16px;
+    font-size: var(--primary-font-size);
     cursor: pointer;
 }
 
@@ -42,7 +46,7 @@ span {
 
 address {
     font-style: normal;
-    font-size: var(--secondary-size);
+    font-size: var(--secondary-font-size);
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -52,7 +56,7 @@ address {
 }
 
 .top-main-ind-button {
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     line-height: 1.87;
     display: flex;
     align-items: center;
@@ -79,30 +83,29 @@ address {
 }
 
 .our-virtues-title {
-    font-weight: 700;
-    font-size: var(--secondary-size);
+    font-weight: var(--primary-font-weight);
+    font-size: var(--secondary-font-size);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .our-virtues-desc {
-    font-size: var(--secondary-size);
+    font-size: var(--secondary-font-size);
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--paragraf-text-color);
 }
 
 .specialists_name {
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--primary-font-size);
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
 
 .specialists_profession {
-    font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
@@ -110,7 +113,7 @@ address {
 }
 
 .topic {
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -139,8 +142,8 @@ address {
 
 .menu-link {
     list-style: none; 
-    font-weight: 500;
-    font-size: var(--secondary-size);
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--secondary-font-size);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);  
@@ -155,8 +158,8 @@ address {
 
 .menu-contacts-navigation {
   
-    font-weight: 500;
-    font-size: var(--secondary-size);
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--secondary-font-size);
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--paragraf-text-color);
@@ -167,7 +170,7 @@ address {
 }
 
 .button-text {
-    font-weight: 500;
+    font-weight: var(--secondary-font-weight);
     line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
@@ -186,7 +189,7 @@ address {
 .logo-navigation {
     text-decoration: none;
     font-family: var(--secondary-font);
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -194,14 +197,13 @@ address {
 }
 
 .text-project-portfolio {
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
 .kind-project-portfolio {
-    font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--paragraf-text-color);
@@ -210,7 +212,7 @@ address {
 .logo-footer {
     text-decoration: none;
     font-family: var(--secondary-font);
-    font-weight: 700;
+    font-weight: var(--primary-font-weight);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
