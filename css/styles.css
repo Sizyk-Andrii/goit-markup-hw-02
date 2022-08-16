@@ -20,6 +20,7 @@ body {
     font-family: var(--primary-font);
     color: var(--main-text-color);
     font-size: var(--primary-font-size);
+    background-color: #FFFFFF;
 }
 
 img {
@@ -120,10 +121,27 @@ address {
     letter-spacing: 0.03em;
 }
 
-.examples_work {
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.examples_work, .portfolio-btn-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.portfolio-list-projects {
+    
 }
 
 .our-team-list, .our-virtues-list {
