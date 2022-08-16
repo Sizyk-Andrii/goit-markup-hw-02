@@ -3,7 +3,10 @@
     --accent-color:#2196F3;
     --bg-color1: #FFFFFF;
     --main-text-color: #212121; 
+    --secondary-bg-color: #2F303A;
+    --third-bg-color: #F5F4FA;
     --paragraf-text-color:  #757575;
+    --button-hover-focus-color: #188CE8;
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --primary-font-size: 16px;
@@ -20,7 +23,7 @@ body {
     font-family: var(--primary-font);
     color: var(--main-text-color);
     font-size: var(--primary-font-size);
-    background-color: #FFFFFF;
+    background-color: var(--bg-color1);
 }
 
 img {
@@ -52,11 +55,11 @@ address {
     letter-spacing: 0.03em;
 }
 
-.top-main-ind {
-    background-color: #2F303A;
+.top-main-index-bg, .page-footer-bg {
+    background-color: var(--secondary-bg-color);
 }
 
-.top-main-ind-button {
+.top-main-index-button {
     font-weight: var(--primary-font-weight);
     line-height: 1.87;
     display: flex;
@@ -69,11 +72,11 @@ address {
     border-radius: 4px;
 }
 
-.top-main-ind-button:hover, .top-main-ind-button:focus {
-    background-color: #188CE8;
+.top-main-index-button:hover, .top-main-index-button:focus {
+    background-color: var(--button-hover-focus-color);
 }
 
-.top-main-ind-title {
+.top-main-index-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -151,7 +154,7 @@ address {
 }
 
 .our-team-section {
-    background-color: #F5F4FA;
+    background-color: var(--third-bg-color);
 }
 
 .list-item, .list-menu-contacts, .menu-item {
@@ -184,7 +187,7 @@ address {
 }
 
 .line-in-header {
-    border: 1px solid #ECECEC;;
+    border: 1px solid #ECECEC;
 }
 
 .button-text {
@@ -193,7 +196,7 @@ address {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    background: #F5F4FA;
+    background: var(--third-bg-color);
     border-radius: 4px;
 }
 
@@ -245,6 +248,3 @@ address {
     color: var(--bg-color1);
 }
 
-.page-footer{
-    background: #2F303A;
-}
