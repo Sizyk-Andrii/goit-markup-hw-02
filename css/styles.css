@@ -7,12 +7,16 @@
     --third-bg-color: #F5F4FA;
     --paragraf-text-color:  #757575;
     --button-hover-focus-color: #188CE8;
+    --logo-navigation-text-color: #000000;
+    --menu-contacts-footer-color: rgba(255, 255, 255, 0.6);
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
     --primary-font-size: 16px;
     --secondary-font-size: 14px;
+    --third-font-size: 26px;
     --primary-font-weight: 700;
     --secondary-font-weight: 500;
+    --primary-letter-spacing: 0.03em;
 }
 
 header {
@@ -21,8 +25,9 @@ header {
 
 body {
     font-family: var(--primary-font);
-    color: var(--main-text-color);
     font-size: var(--primary-font-size);
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--main-text-color);
     background-color: var(--bg-color1);
 }
 
@@ -39,7 +44,7 @@ section {
 }
 
 button {
-    font-family: var(--primary-font);
+    font-family: inherit;
     font-size: var(--primary-font-size);
     cursor: pointer;
 }
@@ -52,7 +57,7 @@ address {
     font-style: normal;
     font-size: var(--secondary-font-size);
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
 }
 
 .top-main-index-bg, .page-footer-bg {
@@ -86,42 +91,11 @@ address {
     color: var(--bg-color1);
 }
 
-.our-virtues-title {
-    font-weight: var(--primary-font-weight);
-    font-size: var(--secondary-font-size);
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.our-virtues-desc {
-    font-size: var(--secondary-font-size);
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--paragraf-text-color);
-}
-
-.specialists_name {
-    font-weight: var(--secondary-font-weight);
-    font-size: var(--primary-font-size);
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.specialists_profession {
-    line-height: 1.19;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--paragraf-text-color);
-}
-
 .topic {
     font-weight: var(--primary-font-weight);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .visually-hidden {
@@ -136,6 +110,33 @@ address {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.our-virtues-title {
+    font-weight: var(--primary-font-weight);
+    font-size: var(--secondary-font-size);
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.our-virtues-desc {
+    font-size: var(--secondary-font-size);
+    line-height: 1.71;
+    color: var(--paragraf-text-color);
+}
+
+.specialists_name {
+    font-weight: var(--secondary-font-weight);
+    font-size: var(--primary-font-size);
+    line-height: 1.19;
+    text-align: center;
+}
+
+.specialists_profession {
+    line-height: 1.19;
+    text-align: center;
+    color: var(--paragraf-text-color);
+}
+
 
 .examples_work, .portfolio-btn-list {
     display: flex;
@@ -211,10 +212,10 @@ address {
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: var(--primary-font-weight);
-    font-size: 26px;
+    font-size: var(--third-font-size);
     line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000
+    letter-spacing: var(--primary-letter-spacing);
+    color: var(--logo-navigation-text-color);
 }
 
 .text-project-portfolio {
@@ -226,7 +227,6 @@ address {
 
 .kind-project-portfolio {
     line-height: 1.88;
-    letter-spacing: 0.03em;
     color: var(--paragraf-text-color);
 }
 
@@ -234,14 +234,14 @@ address {
     text-decoration: none;
     font-family: var(--secondary-font);
     font-weight: var(--primary-font-weight);
-    font-size: 26px;
+    font-size: var(--third-font-size);
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing)m;
     color:var(--bg-color1);
 }
 
 .menu-contacts-footer {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--menu-contacts-footer-color);
 }
 
 .location {
