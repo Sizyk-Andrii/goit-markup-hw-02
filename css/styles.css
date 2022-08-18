@@ -76,6 +76,10 @@ address {
     background-color: var(--secondary-bg-color);
 }
 
+/* .portfolio-page {
+    padding: 0;
+}  */
+
 .top-main-index-button {
     font-size: var(--secondary-font-size);
     font-weight: var(--primary-font-weight);
@@ -157,7 +161,8 @@ address {
 }
 
 .portfolio-list-projects {
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .our-team-list, .our-virtues-list {
@@ -195,8 +200,7 @@ color: var(--accent-color);
 
 .menu-contacts-navigation {
   
-    /* font-weight: var(--secondary-font-weight); */
-    font-weight: var(--primary-font-weigh); 
+    font-weight: var(--secondary-font-weight);
     line-height: var(--primary-line-height);
     letter-spacing: var(--secondary-letter-spacing);
     color: var(--paragraf-text-color);
